@@ -42,7 +42,7 @@ func init() {
 	fetchCmd.Flags().StringVar(&requestParams.OSVersion, "os-version", "2.5.2", "OS version")
 	fetchCmd.Flags().StringVarP(&requestParams.Platform, "platform", "p", "", "firmware platform (\"reMarkable\" or \"reMarkable2\")")
 	fetchCmd.MarkFlagRequired("platform")
-	fetchCmd.Flags().StringVar(&requestParams.ReleaseVersion, "release-version", "0.0.0.0", "current firmware version")
+	fetchCmd.Flags().StringVar(&requestParams.ReleaseVersion, "release-version", "2.5.0.0", "current firmware version")
 	fetchCmd.Flags().StringVar(&requestParams.SerialNumber, "serial-number", "RM100-000-00000", "serial number")
 	fetchCmd.Flags().StringVar(&omahaURL, "omaha-url", rmupdate.OmahaURL, "URL for the Omaha server")
 
